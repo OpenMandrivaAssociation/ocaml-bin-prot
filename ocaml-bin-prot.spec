@@ -10,6 +10,10 @@ Source0:        http://hg.ocaml.info/release/bin-prot/archive/bin-prot-release-%
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 BuildRequires:  ocaml
 BuildRequires:  camlp4
+BuildRequires:  ocaml-findlib
+BuildRequires:  ocaml-ounit
+BuildRequires:  ocaml-type-conv
+BuildRequires:  ncurses-devel
 BuildRequires:  dos2unix
 
 %description
