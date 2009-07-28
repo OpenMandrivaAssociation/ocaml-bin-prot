@@ -1,5 +1,5 @@
 Name:           ocaml-bin-prot
-Version:        1.2.9
+Version:        1.2.18
 Release:        %mkrel 1
 Summary:        Automated code generation for converting OCaml values to/from a type-safe binary protocol
 License:        LGPL
@@ -74,7 +74,7 @@ rm -rf %{buildroot}
 
 %files devel
 %defattr(-,root,root)
-%doc doc LICENSE LICENSE.Tywith CHANGES COPYRIGHT README.txt
+%doc doc LICENSE LICENSE.Tywith Changelog COPYRIGHT README.txt
 %{_libdir}/ocaml/bin_prot/*.a
 %{_libdir}/ocaml/bin_prot/*.cmxa
 %{_libdir}/ocaml/bin_prot/*.mli
