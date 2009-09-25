@@ -1,5 +1,5 @@
 Name:           ocaml-bin-prot
-Version:        1.2.18
+Version:        1.2.20
 Release:        %mkrel 1
 Summary:        Automated code generation for converting OCaml values to/from a type-safe binary protocol
 License:        LGPL
@@ -14,7 +14,6 @@ BuildRequires:  ocaml-findlib
 BuildRequires:  ocaml-ounit
 BuildRequires:  ocaml-type-conv
 BuildRequires:  ncurses-devel
-BuildRequires:  dos2unix
 
 %description
   This library contains functionality for reading and writing OCaml-values in
@@ -45,7 +44,6 @@ developing applications that use %{name}.
 
 %prep
 %setup -q -n bin-prot-release-%{version}
-dos2unix LICENSE.Tywith
 
 %build
 make
@@ -75,6 +73,7 @@ rm -rf %{buildroot}
 %files devel
 %defattr(-,root,root)
 %doc doc LICENSE LICENSE.Tywith Changelog COPYRIGHT README.txt
+%doc lib_test
 %{_libdir}/ocaml/bin_prot/*.a
 %{_libdir}/ocaml/bin_prot/*.cmxa
 %{_libdir}/ocaml/bin_prot/*.mli
