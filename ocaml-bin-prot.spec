@@ -1,11 +1,11 @@
 Name:           ocaml-bin-prot
-Version:        1.2.20
+Version:        1.2.21
 Release:        %mkrel 1
 Summary:        Automated code generation for converting OCaml values to/from a type-safe binary protocol
 License:        LGPL
 Group:          Development/Other
 URL:            http://ocaml.info/home/ocaml_sources.html#bin-prot
-Source0:        http://hg.ocaml.info/release/bin-prot/archive/bin-prot-release-%{version}.tar.lzma
+Source0:        http://hg.ocaml.info/release/bin-prot/archive/bin-prot-release-%{version}.tar.bz2
 # curl http://hg.ocaml.info/release/bin-prot/archive/release-${version}.tar.bz2 > bin-prot-release-%{version}.tar.bz2
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 BuildRequires:  ocaml
