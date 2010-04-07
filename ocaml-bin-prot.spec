@@ -1,5 +1,5 @@
 Name:           ocaml-bin-prot
-Version:        1.2.21
+Version:        1.2.23
 Release:        %mkrel 1
 Summary:        Automated code generation for converting OCaml values to/from a type-safe binary protocol
 License:        LGPL
