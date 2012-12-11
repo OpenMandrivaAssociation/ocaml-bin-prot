@@ -1,13 +1,13 @@
 Name:           ocaml-bin-prot
 Version:        1.2.23
-Release:        %mkrel 1
-Summary:        Automated code generation for converting OCaml values to/from a type-safe binary protocol
+Release:        5
+Summary:        Auto code generation for converting OCaml values to/from type-safe bin protocol
 License:        LGPL
 Group:          Development/Other
 URL:            http://ocaml.info/home/ocaml_sources.html#bin-prot
 Source0:        http://hg.ocaml.info/release/bin-prot/archive/bin-prot-release-%{version}.tar.bz2
+Patch0:         ocaml-bin-prot-1.2.23-unused-var.patch
 # curl http://hg.ocaml.info/release/bin-prot/archive/release-${version}.tar.bz2 > bin-prot-release-%{version}.tar.bz2
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 BuildRequires:  ocaml
 BuildRequires:  camlp4
 BuildRequires:  ocaml-findlib
@@ -44,6 +44,7 @@ developing applications that use %{name}.
 
 %prep
 %setup -q -n bin-prot-release-%{version}
+%patch0 -p0
 
 %build
 make
@@ -78,4 +79,29 @@ rm -rf %{buildroot}
 %{_libdir}/ocaml/bin_prot/*.cmxa
 %{_libdir}/ocaml/bin_prot/*.mli
 %{_libdir}/ocaml/bin_prot/*.ml
+
+
+
+%changelog
+* Wed Apr 07 2010 Florent Monnier <blue_prawn@mandriva.org> 1.2.23-1mdv2010.1
++ Revision: 532841
+- updated to version 1.2.23
+
+* Fri Mar 26 2010 Florent Monnier <blue_prawn@mandriva.org> 1.2.21-1mdv2010.1
++ Revision: 527573
+- updated to version 1.2.21
+
+* Fri Sep 25 2009 Florent Monnier <blue_prawn@mandriva.org> 1.2.20-1mdv2010.0
++ Revision: 449230
+- new version 1.2.20
+
+* Tue Jul 28 2009 Florent Monnier <blue_prawn@mandriva.org> 1.2.18-1mdv2010.0
++ Revision: 401361
+- updated version
+
+* Sun Jan 18 2009 Florent Monnier <blue_prawn@mandriva.org> 1.2.9-1mdv2009.1
++ Revision: 330985
+- added some BuildRequires
+- import ocaml-bin-prot
+
 
