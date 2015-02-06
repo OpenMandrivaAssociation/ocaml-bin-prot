@@ -1,7 +1,7 @@
 Summary:	Auto code generation for converting OCaml values to/from type-safe bin protocol
 Name:		ocaml-bin-prot
 Version:	1.2.23
-Release:	6
+Release:	7
 License:	LGPLv2.1+
 Group:		Development/Other
 Url:		http://ocaml.info/home/ocaml_sources.html#bin-prot
