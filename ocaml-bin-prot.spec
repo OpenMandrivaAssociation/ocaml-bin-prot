@@ -4,7 +4,7 @@ Version:	1.2.23
 Release:	7
 License:	LGPLv2.1+
 Group:		Development/Other
-Url:		http://ocaml.info/home/ocaml_sources.html#bin-prot
+Url:		https://ocaml.info/home/ocaml_sources.html#bin-prot
 Source0:	http://hg.ocaml.info/release/bin-prot/archive/bin-prot-release-%{version}.tar.bz2
 Source10:	%{name}.rpmlintrc
 Patch0:		ocaml-bin-prot-1.2.23-unused-var.patch
