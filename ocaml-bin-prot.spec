@@ -9,6 +9,7 @@ Source0:	http://hg.ocaml.info/release/bin-prot/archive/bin-prot-release-%{versio
 Source10:	%{name}.rpmlintrc
 Patch0:		ocaml-bin-prot-1.2.23-unused-var.patch
 # curl http://hg.ocaml.info/release/bin-prot/archive/release-${version}.tar.bz2 > bin-prot-release-%{version}.tar.bz2
+BuildRequires:	make
 BuildRequires:	camlp4
 BuildRequires:	ocaml
 BuildRequires:	ocaml-findlib
